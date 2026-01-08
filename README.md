@@ -17,12 +17,12 @@ Eslint configuration that `dictates`, how you should write your js/ts code.
 ## Eqeq
 Eslint will warn on == (it is highly recommended to use === instead)
 
+# Install
+To implement just copy the `eslint.config.js` lmao
 To install dependencies:
 ```bash
 bun install
 ```
-To implement:
-just copy the `eslint.config.js` lmao
 To run:
 ```bash
 bun run src/index.ts
