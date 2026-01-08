@@ -17,6 +17,14 @@ Eslint configuration that `dictates`, how you should write your js/ts code.
 ## Eqeq
 Eslint will warn on == (it is highly recommended to use === instead)
 
+# Requirements
+- "@eslint/js": "^9.39.2",
+- "eslint": "^9.39.2",
+- "eslint-plugin-filenames-simple": "^0.9.0",
+- "eslint-plugin-react": "^7.37.5",
+- "eslint-plugin-react-hooks": "^7.0.1",
+- "typescript-eslint": "^8.52.0"
+
 # Install
 To implement just copy the `eslint.config.js` lmao
 To install dependencies:
