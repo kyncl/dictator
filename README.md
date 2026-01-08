@@ -1,5 +1,5 @@
 # dictator
-Eslint configuration that `dictates`, how you should write your js/ts code.
+Eslint configuration that [dictates](https://www.youtube.com/watch?v=MG_npaLydKg), how you should write your js/ts code.
 
 # Rules
 ## Types
