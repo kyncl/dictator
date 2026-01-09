@@ -58,6 +58,13 @@ export default [
             // React Hooks rules
             "react-hooks/rules-of-hooks": "error",
             "react-hooks/exhaustive-deps": "warn",
+            "no-restricted-syntax": [
+                "error",
+                {
+                    selector: "TSEnumDeclaration",
+                    message: "Use string union instead of enum"
+                },
+            ],
 
             // Naming conventions
             "@typescript-eslint/naming-convention": [
@@ -84,14 +91,16 @@ export default [
                     selector: "typeAlias",
                     format: ["PascalCase"],
                 },
-                {
+                // it's kind of useless rn, cuz of no enum rule, but I 
+                // will leave it here just in case
+                /* {
                     selector: "enum",
                     format: ["PascalCase"],
                 },
                 {
                     selector: "enumMember",
                     format: ["UPPER_CASE", "PascalCase"],
-                },
+                }, */
                 {
                     selector: "class",
                     format: ["PascalCase"],

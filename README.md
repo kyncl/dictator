@@ -12,10 +12,11 @@ Eslint configuration that [dictates](https://www.youtube.com/watch?v=MG_npaLydKg
 | Interfaces       | PascalCase |
 | Type aliases     | PascalCase |
 | Classes          | PascalCase |
-| Enums            | PascalCase |
-| Enum members     | PascalCase/UPPER_CASE |
 ## Eqeq
 Eslint will warn on == (it is highly recommended to use === instead)
+
+## No enum rule
+Generally it is not wise to use enums in typescript, because the compiler can do some really big shenanigans. Instead use string unions.
 
 # Requirements
 - "@eslint/js": "^9.39.2",
@@ -24,6 +25,10 @@ Eslint will warn on == (it is highly recommended to use === instead)
 - "eslint-plugin-react": "^7.37.5",
 - "eslint-plugin-react-hooks": "^7.0.1",
 - "typescript-eslint": "^8.52.0"
+or you can install by 
+```bash
+bun install @eslint/js eslint eslint-plugin-filenames-simple eslint-plugin-react eslint-plugin-react-hooks typescript-eslint
+```
 
 # Install
 To implement just copy the `eslint.config.js` lmao

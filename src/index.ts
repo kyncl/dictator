@@ -8,3 +8,7 @@ export interface wrongInterface {
 function wrong_function() {
 
 }
+
+export enum unCoolEnum {
+
+}
