@@ -69,11 +69,12 @@ export default [
             // Naming conventions
             "@typescript-eslint/naming-convention": [
                 "error",
-                {
+                // Proven to be more troublesome like importing App or Link from NextJs
+                /*{
                     selector: "default",
                     format: ["camelCase"],
                     leadingUnderscore: "allow",
-                },
+                },*/
                 {
                     selector: "variable",
                     format: ["camelCase", "UPPER_CASE", "PascalCase"],
