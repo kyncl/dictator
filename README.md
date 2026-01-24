@@ -25,7 +25,7 @@ Generally it is not wise to use enums in typescript, because the compiler can do
 - "eslint-plugin-react": "^7.37.5",
 - "eslint-plugin-react-hooks": "^7.0.1",
 - "typescript-eslint": "^8.52.0"
-or you can install by 
+- or you can install by 
 ```bash
 bun install @eslint/js eslint eslint-plugin-filenames-simple eslint-plugin-react eslint-plugin-react-hooks typescript-eslint
 ```
