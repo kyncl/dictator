@@ -40,3 +40,6 @@ To run:
 ```bash
 bun run src/index.ts
 ```
+
+# Next.js version
+If you want dictator specific for Next.js checkout `nextjs/eslint.config.js`

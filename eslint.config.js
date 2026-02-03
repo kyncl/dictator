@@ -1,13 +1,22 @@
+import { defineConfig, globalIgnores } from "eslint/config";
 import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import filenames from "eslint-plugin-filenames-simple";
 
-export default [
+const eslintConfig = defineConfig([
+    // Override default ignores of eslint-config-next.
+    globalIgnores([
+        // Default ignores of eslint-config-next:
+        ".next/**",
+        "out/**",
+        "build/**",
+        "next-env.d.ts",
+    ]),
     // only lint src/ 
     {
-        ignores: ["**/*", "!src/**"],
+        ignores: ["**/*", "!src/**", "!index.ts"],
     },
     js.configs.recommended,
     ...tseslint.configs.recommendedTypeChecked,
@@ -128,4 +137,6 @@ export default [
         files: ["src/**/*.js"],
         extends: [tseslint.configs.disableTypeChecked],
     },
-];
+]);
+
+export default eslintConfig;
